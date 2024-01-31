@@ -1,0 +1,17 @@
+cpu                    = 2 # CPU Sockets
+cores-per-socket       = 4 # CPU Cores
+ram                    = 4096 # Size in MB
+disksize               = 100 # in GB
+vm-guest-id            = "ubuntu64Guest" # Do not modify
+vsphere-unverified-ssl = "true" # Allow unsigned SSL
+vsphere-datacenter     = "Datacenter" # vSphere Datacenter name
+vsphere-cluster        = "Cluster01" # vSphere Cluster name
+vm-datastore           = "Datastore1_SSD" # vSphere Datastore
+vm-network             = "VM Network" # Portgroup VSS/DVS
+vm-domain              = "home" # localdomain
+dns_server_list        = ["192.168.1.80", "8.8.8.8"]
+name                   = "ubuntu22-04-test" # VM name
+ipv4_address           = "192.168.1.97" # IP address
+ipv4_gateway           = "192.168.1.254" # Network Gateway
+ipv4_netmask           = "24" # Subnet in CIDR format
+vm-template-name       = "Ubuntu-2204-Template-100GB-Thin" # Template used to deploy
